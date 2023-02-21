@@ -13,12 +13,17 @@ font-family: 'Lato', sans-serif;
 }
 
 body{
-    margin: 0;
+    background: #60727b;
+    color: #fff;
+    margin: 0 auto;
     width: clamp(240px, 100%, 840px);
 }
 
-nav{
+header{
     padding: 20px;
+}
+nav{
+    width: 100%;
     display: flex;
     align-items: stretch;
     justify-content: flex-start;
@@ -27,7 +32,7 @@ nav{
     font-family: 'Poppins', sans-serif;
 }
 nav > img{
-    width: 150px;
+    width: 100px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -39,10 +44,69 @@ nav > div{
 }
 nav > div > h1{
     margin: 0;
-    font-size: 2.2em;
+    font-size: 1.8em;
 }
+
+
+
 
 main{
     padding: 20px;
     font-family: 'Lato', sans-serif;
+}
+#gallery{
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#corousal{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+#corousal > img{
+    width: 100%;
+    object-fit: cover;
+}
+#gallery > h2{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background-color: #242424a2;
+    font-weight: 600;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+
+footer{
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+#social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#social > a:any-link{
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+}
+#social > a > img{
+    width: 20px;
+}
+#social > a > span{
+
+    float: right;
 }

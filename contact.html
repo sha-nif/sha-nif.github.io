@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message in WhatsApp</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+            background: #2aa046;
+            color: #fff;
+        }
+        header{
+            margin: 20px auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header > img{
+            margin-top: 50px;
+            height: 30px;
+        }
+        form{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form *{
+            width: 100%;
+            padding: 10px;
+            font-size: large;
+        }
+        form button{
+            margin-top: 20px;
+            background: #46f36e;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/whatsapp.png" alt="whatsapp">
+        <h1>Shanif P P</h1>
+        <a href="tel:+917034770378">+917034770378</a>
+    </header>
+    <form action="https://wa.me/+917034770378">
+        <textarea name="text" id="text" cols="30" 
+            rows="10">Hi, I'm [YOUR NAME]</textarea>
+        <button type="submit">send</button>
+    </form>
+</body>
+</html>
